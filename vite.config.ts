@@ -11,7 +11,7 @@ export default defineConfig({
       // 别名
       '@': resolve(__dirname, 'src'),
 
-      'vue$': 'https://cdn.staticfile.org/vue/3.2.37/vue.esm-browser.js'
+      // 'vue$': 'https://cdn.staticfile.org/vue/3.2.37/vue.esm-browser.js'
     }
   },
   build: {
@@ -22,14 +22,14 @@ export default defineConfig({
         drop_debugger: true
       }
     },
-    rollupOptions: {
-      external: ['vue', 'vue-router', 'pinia', '@vueuse', 'naive-ui'
-        // './node_modules/vue/dist/vue',
-        // './node_modules/vue-router/dist/vue-router',
-        // './node_modules/pinia/dist/pinia',
-        // './node_modules/@vueuse/core/index',
-        // './node_modules/naive-ui/es/index'
-      ]
-    }
+    // rollupOptions: {
+    //   external: ['vue', 'vue-router', 'pinia', '@vueuse', 'naive-ui'
+    //     // './node_modules/vue/dist/vue',
+    //     // './node_modules/vue-router/dist/vue-router',
+    //     // './node_modules/pinia/dist/pinia',
+    //     // './node_modules/@vueuse/core/index',
+    //     // './node_modules/naive-ui/es/index'
+    //   ]
+    // }
   }
 });
